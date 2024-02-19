@@ -1,0 +1,90 @@
+/*_______________________________________INICIO.HTML_____________________________________________*/
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+#hat{
+    background-image: url(../imagenes/hat.jpg);
+    background-repeat: no-repeat;
+    height: 860px;
+    width: 1200px;
+    margin-left: 30%;
+}
+#hands{
+    background-image: url(../imagenes/pruebaFondo.jpg);
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 1200px;
+    margin-left: 120px;
+    margin-top: 100px;
+    position:absolute;
+}
+
+#a{
+    text-align: left;
+    font-size: 90px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    margin-top: 670px;
+    color:rgb(226, 226, 226);
+    position:absolute;
+}
+
+#b{
+    text-align: left;
+    margin-left:220px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    margin-top: 800px;
+    color:rgb(226, 226, 226);
+    position:absolute;
+}
+#c{
+    text-align: left;
+    margin-left:100px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    margin-top: 820px;
+    color:rgb(226, 226, 226);
+    position:absolute;
+}
+
+#jugarBoton{
+    background-image: url(../imagenes/botonJugar.JPG);
+    width: 500px;
+    height: 200px;
+    margin-top:450px;
+    margin-left: 320px;
+    position:absolute;
+    background-repeat: no-repeat;
+
+}
+#cabecera{
+    background-color:  rgb(32, 49, 28);
+    height: 130px;
+}
+
+#Logo{
+    height: 130px;
+    margin-left: 0%;
+
+}
+
+#foot{
+    display: flex;
+    margin-top: 90%;
+    background-color: #111e1e;
+    color: white;
+    padding: 10px;
+
+}
+.foo{
+    padding: 1%;
+}
+.ah {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 0;
+    margin: 10px;
+    margin-left: 10%;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}

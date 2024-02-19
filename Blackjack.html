@@ -1,0 +1,189 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BlackJack</title>
+        <link id="fav" rel="icon" type="image/x-icon" href="imagenes/FaviconVerde.ico" >
+
+        <link rel="stylesheet" href="css/blackjack.css">
+
+        <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
+
+        <script
+			  src="https://code.jquery.com/jquery-3.7.1.js"
+			  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+			  crossorigin="anonymous"></script>
+        <script src="javascript/blackjack.js"></script>
+        <script src="javascript/blackjackjquery.js"></script>
+            <script src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+
+
+        <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+
+
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="/resources/demos/external/jquery-mousewheel/jquery.mousewheel.js"></script>
+        <script src="/javascript/moneywidget.js"></script>
+
+        <style>
+  
+  #menu {
+                background-color: #111e1e;
+                overflow: hidden;
+                padding: 18px;
+            }
+    
+            #menu a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 100px;
+                text-decoration: none;
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    
+            #menu a:hover {
+                background-color: #1d2f2f;
+                color: rgb(152, 153, 133);
+                
+            }
+    
+            #imagen {
+                float: left;
+                margin-right: 20px;
+                height: 50px;
+                margin-top: 20px;
+                padding-bottom: 30px;
+            }
+            #i{
+                height: 120px;
+                margin-top: -40px;
+                margin-left: -70px;
+            }
+
+            #footer {
+                background-color: #111e1e;
+            color: white;
+            margin-top: 90%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #redes-sociales {
+            margin-top: 10px;
+        }
+
+        #redes-sociales a {
+            display: inline-block;
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        #info-contacto {
+            margin-top: 20px;
+        }
+
+        #licencia {
+            margin-top: 20px;
+        }
+      </style>
+
+    </head>
+
+    <body>
+
+      <div id="menu">
+        <div id="imagen">
+          <a href="/Inicio.html" target="_blank"><img src="imagenes/Logo.png" alt="Imagen pequeña" id="i"></a>
+        </div>
+        <a href="/Inicio.html">Inicio</a>
+        <a href="/Blackjack.html">Juegos</a>
+        <a href="/Contacto.html">Contacto</a>
+        <a href="/Register.html">Register</a>
+    </div>
+      <div><img src="imagenes/calavera1.jpg" id="calavera"></div>
+
+        <h2>Dealer: <span id="dealerTotal"></span></h2>
+        <div id="dealerCartas">
+            <img id="hidden" src="imagenes/cards/BACK.png">
+        
+        </div>
+
+        <h2>You: <span id="tuTotal"></span></h2>
+        <div id="tusCartas"></div>
+
+        <br>
+        <button id="Pedir">Hit</button>
+        <button id="Plantarse">Stay</button>
+        <button id="otra">New Game</button>
+        <p id="resultado"></p>
+
+
+
+        <p>
+            <label for="spinner">Selecciona cuantos euros quieres apostar:</label>
+            <input id="spinner" name="value">
+          </p>
+           
+          <p>
+            <button id="disable">Permitir apostar/no permitir apostar</button>
+            <button id="destroy">Activar/desactivar widget</button>
+          </p>
+           
+          <p>
+            <button id="getvalue">Mostrar por pantalla</button>
+            <button id="setvalue">Apuesta Predeterminada</button>
+          </p>
+    </body>
+    <aside>
+        <p id="tablatop">JUGADORES</p>
+        <div id="jugadores"></div>
+    </aside>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="owl-carousel owl-theme">
+        <div> <img src="imagenes/poker.png" class=" imgfoot" > </div>
+        <div> <img src="imagenes/Bacará.png" class=" imgfoot"> </div>
+        <div> <img src="imagenes/dados.png" class=" imgfoot"> </div>
+        <div> <img src="imagenes/Ruleta.png" class=" imgfoot"> </div>
+        <div> <img src="imagenes/poker.png" class=" imgfoot"> </div>
+        <div> <img src="imagenes/Bacará.png" class=" imgfoot"> </div>
+        <div> <img src="imagenes/dados.png" class=" imgfoot"> </div>
+        <div> <img src="imagenes/Ruleta.png" class=" imgfoot"> </div>
+      </div>
+      <br>
+      <br>
+      <div id="footer">
+        <div id="redes-sociales">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="https://twitter.com/home" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+    
+        <div id="info-contacto">
+            <p>Email: info@example.com</p>
+            <p>Teléfono: +123456789</p>
+            <p>Dirección: Calle , Ciudad</p>
+        </div>
+    
+        <div id="licencia">
+          <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Blackjack</span> by <span property="cc:attributionName">Hector Cano Alvarez</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
+        </div>
+    
+</html>
